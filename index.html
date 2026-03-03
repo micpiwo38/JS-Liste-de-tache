@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <title>Liste de taches</title>
+</head>
+
+<body>
+    <div class="text-center">
+        <div class="container shadow w-25 mt-5 p-3 rounded">
+            <h1 class="text-warning mb-3">Liste des taches</h1>
+            <form id="liste-de-tache">
+                <label for="tache-input">Nouvelle taches ...</label>
+                <input type="text" id="tache-input" name="tasks" class="form-control mt-3" required
+                    placeholder="Faire du café ...." />
+                <button type="submit" id="btn-ajouter-tache" class="btn btn-info mt-3">Ajouter</button>
+            </form>
+        </div>
+
+        <div>
+            <ul id="liste-taches" class="list-group">
+
+            </ul>
+        </div>
+
+    </div>
+    <script src="assets/js/tasks.js"></script>
+</body>
+
+
+
+
+</html>
