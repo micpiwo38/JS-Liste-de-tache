@@ -22,11 +22,10 @@ const ajouter_tache = () => {
     tache_item.appendChild(btn_supprimer); //Dans <li> j'ajoute <button>
     btn_supprimer.addEventListener("click", () => {
       console.log("test de clic");
-    })
+    });
 
-
+    console.log("test de git");
   });
-}
-
+};
 
 ajouter_tache();
