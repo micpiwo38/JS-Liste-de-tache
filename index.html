@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <title>Liste de taches</title>
+    <title>Liste de Tâches</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
-    <div class="text-center">
-        <div class="container shadow w-25 mt-5 p-3 rounded">
-            <h1 class="text-warning mb-3">Liste des taches</h1>
-            <form id="liste-de-tache">
-                <label for="tache-input">Nouvelle taches ...</label>
-                <input type="text" id="tache-input" name="tasks" class="form-control mt-3" required
-                    placeholder="Faire du café ...." />
-                <button type="submit" id="btn-ajouter-tache" class="btn btn-info mt-3">Ajouter</button>
-            </form>
-        </div>
+<div class="container">
+    <h1>Votre liste de tâches</h1>
 
-        <div>
-            <ul id="liste-taches" class="list-group">
-
-            </ul>
-        </div>
-
+    <div class="form-container">
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="taskInput">Nouvelle tâche :</label>
+                <input type="text" id="taskInput" name="task" placeholder="Entrez une tâche..." required>
+            </div>
+            <button type="submit">Ajouter la tâche</button>
+        </form>
     </div>
-    <script src="assets/js/tasks.js"></script>
+
+    <ul id="taskList" class="task-list"></ul>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
-
-
-
-
 </html>
