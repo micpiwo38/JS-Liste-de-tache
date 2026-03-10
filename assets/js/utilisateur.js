@@ -9,3 +9,5 @@ const register_user = () => {
 };
 
 register_user();
+
+const autre = null;
